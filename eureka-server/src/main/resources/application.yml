@@ -1,0 +1,18 @@
+
+server:
+  port: 8761
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/demo?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: ZH124578
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false #·ÀÖ¹eureka×¢²á×Ô¼º
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
