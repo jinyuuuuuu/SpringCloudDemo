@@ -1,11 +1,13 @@
-package com.example.eurekaserver;
+package com.example.eurekaribbonclient;
+
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class EurekaServerApplicationTests {
-    public EurekaServerApplicationTests() {
+public class EurekaRibbonClientApplicationTests {
+
+    public EurekaRibbonClientApplicationTests() {
     }
 
     @Test

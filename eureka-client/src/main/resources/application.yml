@@ -1,9 +1,9 @@
-eureka:
-  client:
-    serviceUrl:
-      defalutZone: http://localhost:8761/eureka/
-server:
-  port: 8762
+#eureka:
+#  client:
+#    serviceUrl:
+ #     defalutZone: http://localhost:8761/eureka/
+#server:
+#  port: 8763
 spring:
   application:
     name: eureka-client
@@ -12,3 +12,21 @@ spring:
         url: jdbc:mysql://127.0.0.1/demo?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=GMT%2B8
         username: root
         password: ZH124578
+---
+spring:
+  profiles: client1
+server:
+  port: 8762
+eureka:
+  client:
+    serviceUrl:
+      defalutZone: http://localhost:8761/eureka/
+---
+spring:
+  profiles: client2
+server:
+  port: 8763
+eureka:
+  client:
+    serviceUrl:
+      defalutZone: http://localhost:8761/eureka/
