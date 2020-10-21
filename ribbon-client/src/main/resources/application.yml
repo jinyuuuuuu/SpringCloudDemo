@@ -1,0 +1,8 @@
+stores:
+  ribbon:
+    listOfServers: example.com,google.com
+ribbon:
+  eureka:
+    enabled: false #禁止调用EurekaClient获取注册列表
+server:
+  port: 8769
