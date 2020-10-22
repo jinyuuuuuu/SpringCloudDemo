@@ -1,13 +1,15 @@
 package com.example.ribbonclient;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RibbonClientApplicationTests {
+public class RibbonClientApplicationTests {
+    public RibbonClientApplicationTests() {
+    }
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
     }
 
 }
