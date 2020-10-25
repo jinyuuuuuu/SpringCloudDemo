@@ -27,4 +27,6 @@ public class RibbonController {
         ServiceInstance serviceInstance = loadBalancerClient.choose("eureka-client");
         return serviceInstance.getHost() + "c"+name+":" + serviceInstance.getPort();
     }
+
+
 }

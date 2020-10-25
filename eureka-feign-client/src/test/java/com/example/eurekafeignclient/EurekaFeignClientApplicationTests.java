@@ -1,13 +1,16 @@
 package com.example.eurekafeignclient;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EurekaFeignClientApplicationTests {
+public class EurekaFeignClientApplicationTests {
+    public EurekaFeignClientApplicationTests() {
+    }
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
     }
 
 }

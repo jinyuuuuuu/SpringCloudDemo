@@ -3,7 +3,7 @@ stores:
     listOfServers: example.com,google.com
 ribbon:
   eureka:
-    enabled: false #禁止调用EurekaClient获取注册列表
+    enabled: false #涓嶄粠EurekaClient涓幏鍙栨湇鍔℃敞鍐屽垪琛紝鐢眘tores鑷繁缁存姢
 server:
   port: 8769
 spring:
