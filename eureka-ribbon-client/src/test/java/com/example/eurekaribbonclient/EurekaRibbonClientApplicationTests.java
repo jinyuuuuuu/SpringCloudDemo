@@ -39,7 +39,7 @@ public class EurekaRibbonClientApplicationTests implements Callable {
         System.out.println(a==a.intern());
         B b1 = new B();
         A a2 = new A(1);
-        System.out.println(reverse("123"));
+        System.out.println(reverse("12"));
 
     }
     public static String reverse(String str){
