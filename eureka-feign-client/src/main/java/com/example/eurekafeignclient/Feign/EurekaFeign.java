@@ -1,6 +1,7 @@
 package com.example.eurekafeignclient.Feign;
 
 import com.example.eurekafeignclient.Config.FeignConfiguration;
+import com.example.eurekafeignclient.Feign.HystrixFallBacks.FeignHystrixFallback1;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Return: null
  * @Date: 10:51 2020/10/22
 */
-@FeignClient(value = "eureka-client",configuration =FeignConfiguration.class)
+@FeignClient(value = "eureka-client",configuration =FeignConfiguration.class,fallback = FeignHystrixFallback1.class)
 public interface EurekaFeign {
     /**
      * @Author: JinYu
