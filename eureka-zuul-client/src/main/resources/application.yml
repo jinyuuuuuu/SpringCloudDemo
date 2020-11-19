@@ -5,16 +5,17 @@ server:
   port: 5000
 eureka:
   client:
-    service-url: http://localhost:8761/eureka
+    service-url:
+      defaultZone: http://localhost:8761/eureka
 zuul:
   routes:
     hiapi:
-      path: "/hiapi/**"
-      serviceId: "eureka-client" #将指定类型的URL分发到指定的服务去
+      path: /hiapi/**
+      serviceId: eureka-client #将指定类型的URL分发到指定的服务去
     ribbonapi:
-      path: "/ribbonapi/**"
-      serviceId: "eureka-ribbon-client" #将指定类型的URL分发到指定的服务去
+      path: /ribbonapi/**
+      serviceId: eureka-ribbon-client #将指定类型的URL分发到指定的服务去
     feignapi:
-      path: "/feignapi/**"
-       serviceId: "eureka-feign-client" #将指定类型的URL分发到指定的服务去
+      path: /feignapi/**
+      serviceId: eureka-feign-client #将指定类型的URL分发到指定的服务去
   prefix: /version1 #指定版本号

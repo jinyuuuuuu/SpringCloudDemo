@@ -12,6 +12,7 @@ public class HiServiceImpl implements HiService {
 
 
 
+
     @Resource
     private EurekaFeign eurekaFeign;
     @Override

@@ -25,6 +25,7 @@ public class RibbonController {
     @GetMapping("/hi1")
     public String hi1(@RequestParam(required = false,defaultValue = "JinYu") String name){
         ServiceInstance serviceInstance = loadBalancerClient.choose("eureka-client");
+
         return serviceInstance.getHost() + "c"+name+":" + serviceInstance.getPort();
     }
 

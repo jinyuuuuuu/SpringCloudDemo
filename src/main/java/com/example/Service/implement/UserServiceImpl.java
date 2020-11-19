@@ -17,6 +17,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User findUserByNickName(String name) {
+
         UserExample example = new UserExample();
         UserExample.Criteria criteria = example.createCriteria();
         criteria.andNicknameEqualTo(name);
